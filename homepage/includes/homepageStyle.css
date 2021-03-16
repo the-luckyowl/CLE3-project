@@ -1,0 +1,52 @@
+body{
+    margin: 0 ;
+background-image: url("images/groundsBackground.jpg");
+}
+h1{
+margin: 0;
+    height:150px;
+    width: auto;
+    background: black;
+
+}
+#logo{
+ width: 340px;
+    height: auto;
+    margin: auto;
+    display: flex;
+}
+
+#menuBar{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin: auto;
+}
+.menuItem{
+    background-color: #2b2b2b;
+    color: white;
+    font-family: sans-serif;
+    display: inline-flex;
+    padding: 10px 30px;
+    border-left: white 1px solid;
+}
+.menuItem:hover{
+    color: lightgrey;
+    background-color: #313335;
+}
+#menuBox1{
+    border-left: unset;
+}
+#introContainer{
+    background-color: rgba(0,0,0,0.5);
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    padding-top: 50px;
+}
+#intro{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 200;
+}
