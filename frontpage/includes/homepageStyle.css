@@ -1,6 +1,8 @@
 body{
     margin: 0 ;
-background-image: url("images/groundsBackground.jpg");
+    background-image: url("images/brownmusicBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1{
 margin: 0;
@@ -49,4 +51,22 @@ margin: 0;
     color: white;
     font-family: sans-serif;
     font-weight: 200;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+#footerContainer{
+    background-color: rgba(0,0,0,0.5);
+    width: 500px;
+    margin: auto;
+    height: 50px;
+}
+#footerHeaders{
+    color: white;
+    font-family: sans-serif;
+    column-count: 3;
+    text-align: center;
+
 }
