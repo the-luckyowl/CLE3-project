@@ -1,0 +1,17 @@
+#accountManager{
+    display: flex;
+}
+.item.active{
+    background-color: black;
+    color: white;
+}
+.notActive{
+
+    background-color: #313335;
+    color: white;
+}
+.item{
+    background-color: #313335;
+    color: white;
+    cursor: pointer;
+}
