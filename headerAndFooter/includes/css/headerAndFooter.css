@@ -1,8 +1,16 @@
+html{
+    height: 100%;
+}
+
 body{
     margin: 0 ;
     background-image: url("../images/brownmusicBackground.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 h1{
 margin: 0;
@@ -21,7 +29,7 @@ margin: 0;
 #menuBar{
     display: flex;
     justify-content: center;
-    width: 1000px;
+    width: auto;
     margin: auto;
 }
 .menuItem{
@@ -31,10 +39,11 @@ margin: 0;
     display: inline-flex;
     padding: 10px 30px;
     border-left: white 1px solid;
+    cursor: pointer;
 }
 .menuItem:hover{
-    color: lightgrey;
-    background-color: #313335;
+    color: white;
+    background-color: black;
 }
 #menuBox1{
     border-left: unset;
@@ -43,7 +52,7 @@ margin: 0;
 footer{
     bottom: 0;
     width: 100%;
-    position: absolute;
+    margin-top: auto;
 }
 #footerContainer{
     background-color: rgba(0,0,0,0.5);
