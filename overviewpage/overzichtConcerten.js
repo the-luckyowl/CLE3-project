@@ -3,9 +3,9 @@
 const container = document.querySelector("#bodyName");
 
 const bands = [
-    {name:"VILLAGERS OF IOANNINA CITY",date: "14 MEI 2021", time: "21:00", description: "Een van de grootste heavy rock bands van Griekeland met invloeden van Folk uit Epirius, alt-metal en post rock.", youtubeURL:"https://www.youtube.com/embed/7dBCYrFiJSw?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"},
+    {name:"VILLAGERS OF IOANNINA CITY",date: "14 MEI 2021", time: "21:00", description: "Een van de grootste heavy rock bands van Griekeland met invloeden van Folk uit Epirius, alt-metal en post rock.", youtubeURL:"https://www.youtube.com/embed/HoaTPHgr0JE"},
     {name: "GYEDU-BLAY AMBOLLEY",date:"15 MEI 2021", time : "21:00", description:"Afrofunk Legende, de ‘James Brown van Ghana’ keert terug naar Grounds!", youtubeURL:"https://www.youtube.com/embed/mdHfT84GT1Y?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"},
-    {name: "CHOUK BWA & THE ÅNGSTROMERS",date:"18 JUNI 2021", time : "21:00", description:"Atypische voodoo met opzwepende ritmes en elektronica.",youtubeURL:"https://www.youtube.com/embed/7dBCYrFiJSw?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"},
+    {name: "CHOUK BWA & THE ÅNGSTROMERS",date:"18 JUNI 2021", time : "21:00", description:"Atypische voodoo met opzwepende ritmes en elektronica.",youtubeURL:"https://www.youtube.com/embed/GA9GigGuf24"},
     {name: "BOI AKIH STORYTELLER",date:"18 JUNI 2021", time : "20:00", description:"BOI AKIH speelt Storyteller: moderne jazz verweven met folk tradities vanuit alle windstreken.",youtubeURL:"https://www.youtube.com/embed/7dBCYrFiJSw?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"},
     {name: "SAMBA TOURÉ TRIO",date:"8 OKTOBER 2021", time : "21:00", description:"De beste gitarist van Mali keert op zijn nieuwe album terug naar zijn muzikale roots.",youtubeURL:"https://www.youtube.com/embed/7dBCYrFiJSw?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"},
     {name: "MAURINO",date:"15 OKTOBER 2021", time : "21:00", description:"Het brein achter het grootste Latin feest van Nederland, Fiesta Macumba, komt met Future Latin naar Grounds!",youtubeURL:"https://www.youtube.com/embed/7dBCYrFiJSw?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"},
@@ -39,11 +39,21 @@ function makeDiv(bandName, date, time, description, youtube){
     const youtubeDiv = document.createElement("iframe");
     //put youtube url inside src of iframe
     youtubeDiv.src = youtube;
+    youtubeDiv.style.display = ("none");
     mainDiv.appendChild(youtubeDiv);
+
+    const buttonDiv = document.createElement("div");
+    buttonDiv.innerText = "hello";
+    mainDiv.appendChild(buttonDiv);
+
+    buttonDiv.addEventListener("click", clickHandler);
 
 }
 
-
+function clickHandler(e){
+const youtube = e.target;
+    youtube.style.display = ("block");
+}
 
 for (let band of bands) {
     makeDiv(band.name, band.date, band.time, band.description,band.youtubeURL)
