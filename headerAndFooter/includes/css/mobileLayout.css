@@ -1,0 +1,47 @@
+@media only screen and (max-width: 600px){
+body{
+background-image: url("../images/groundsBackgroundMobile.jpg");
+    background-repeat: repeat;
+    background-position:center;
+    background-size:cover;
+    position: absolute;
+}
+#logo{
+    width: 100%;
+}
+
+nav{
+    display: grid;
+    column-count: 1;
+    width: 100%;
+    justify-content: unset;
+    cursor: pointer;
+}
+.material-icons{
+    color: white;
+    display:block;
+    margin: auto;
+    width: -moz-min-content;
+}
+#menuHeaderMobile{
+    display: block;
+    background: black;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+}
+nav a{
+text-align: center;
+    display: none;
+
+}
+nav a.active{
+display: block;
+}
+footer{
+    width: 100%;
+}
+#footerContainer{
+    width: 100%;
+}
+}
