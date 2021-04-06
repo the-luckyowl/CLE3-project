@@ -12,7 +12,7 @@ body{
     flex-direction: column;
     min-height: 100%;
 }
-h1{
+#menuHeader{
 margin: 0;
     height:150px;
     width: auto;
@@ -25,14 +25,32 @@ margin: 0;
     margin: auto;
     display: flex;
 }
-
-#menuBar{
+#signup{
+    position: absolute;
+    width: 75px;
+    right: 75px;
+    background: #313335;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+#logout{
+    position: absolute;
+    right: 0;
+background: #313335;
+    width: 75px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+nav{
     display: flex;
     justify-content: center;
     width: auto;
     margin: auto;
 }
-.menuItem{
+nav a{
+    text-decoration: none;
     background-color: #2b2b2b;
     color: white;
     font-family: sans-serif;
@@ -41,11 +59,15 @@ margin: 0;
     border-left: white 1px solid;
     cursor: pointer;
 }
-.menuItem:hover{
+
+nav a:hover{
     color: white;
     background-color: black;
 }
-#menuBox1{
+#menuHeaderMobile{
+    display: none;
+}
+#menuItem1{
     border-left: unset;
 }
 
@@ -53,6 +75,7 @@ footer{
     bottom: 0;
     width: 100%;
     margin-top: auto;
+
 }
 #footerContainer{
     background-color: rgba(0,0,0,0.5);
